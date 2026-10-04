@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kirtesh Chatur — Computer Engineering Student & Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Kirtesh Chatur, a Computer Engineering student and developer building full-stack web applications, AI-powered solutions, and modern digital products."
+    />
+    <meta name="author" content="Kirtesh Ravindra Chatur" />
+    <meta name="keywords" content="Kirtesh Chatur, Computer Engineering, Full-Stack Developer, AI Applications, React, Node.js, Web Development, Pune, India, Software Engineer" />
+    <meta name="theme-color" content="#0a0a0d" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/kirteshchatur" />
+    <meta property="og:title" content="Kirtesh Chatur — Computer Engineering Student & Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Kirtesh Chatur, a Computer Engineering student and developer building full-stack web applications, AI-powered solutions, and modern digital products."
+    />
+    <meta property="og:site_name" content="Kirtesh Chatur Portfolio" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kirtesh Chatur — Computer Engineering Student & Developer" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Kirtesh Chatur, a Computer Engineering student and developer building full-stack web applications, AI-powered solutions, and modern digital products."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Kirtesh Ravindra Chatur",
+        "alternateName": "Kirtesh Chatur",
+        "jobTitle": "Computer Engineering Student • Developer • Problem Solver",
+        "description": "Computer Engineering student and developer focused on full-stack web applications, AI-powered solutions, and modern user experiences.",
+        "url": "https://github.com/kirteshchatur",
+        "sameAs": [
+          "https://github.com/kirteshchatur"
+        ],
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Padmabhushan Vasantdada Patil Institute of Technology (PVPIT), Pune"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pune",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "India"
+        }
+      }
+    </script>
+
+    <!-- Inline script to prevent theme flash -->
+    <script>
+      (function () {
+        try {
+          const stored = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (stored === 'dark' || (!stored && prefersDark) || !stored) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark text-zinc-900 dark:text-zinc-100 font-sans antialiased selection:bg-blue-500/20 selection:text-blue-400">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
